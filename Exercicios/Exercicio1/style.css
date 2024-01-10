@@ -1,0 +1,29 @@
+:root {
+    font-size: 62.5%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: cornflowerblue;
+}
+
+.titulo {
+    width: auto;
+    margin: 5em auto 0;
+    font-size: 1.6em;
+    text-align: center;
+    outline: 1px solid black;
+    background-color: rgba(169, 236, 52, 0.836);
+}
+
+main {
+    width: 40%;
+    height: 28em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 1.4em;
+    outline: 1px solid black;
+    background-color: rgba(169, 236, 52, 0.836);
+}
