@@ -23,3 +23,8 @@ console.log('Adicionando um item no inicio da array: ')
 alunos.unshift('Mariana')  //unshift adiciona no inicio da array
 alunos.unshift('Ducinei')
 console.log(alunos)
+
+console.log('Removendo um item do final: ')
+const removido = alunos.pop()
+console.log(removido)
+console.log(alunos)
