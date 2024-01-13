@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+
+    <h1>Cadastre-se</h1>
+    <form action="" method="get" class="form">
+        <fieldset>
+            <legend>Insira seus dados abaixo</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" maxlength="12" id="nome" class="nome">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" maxlength="25" id="sobrenome" class="sobrenome">
+
+            <label for="nasc">Data de nascimento</label>
+            <input type="date" id="nasc" class="nasc">
+
+            <label for="cpf">CPF</label>
+            <input type="number" id="cpf" class="cpf">
+
+            <div class="bnt">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="resultado"></div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

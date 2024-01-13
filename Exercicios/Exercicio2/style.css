@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+    :root {
+        font-size: 62.5%;
+    }
+   
+    body {
+        background-color: hotpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    form {
+        border: 1px solid white;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    legend {
+        display: inline-block; 
+    }
+    
+    fieldset {
+        width: 30em;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        border: none;
+
+    }
+
+    input {
+        margin-bottom: .6em;
+    }
+
+}
