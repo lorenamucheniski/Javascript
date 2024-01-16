@@ -23,7 +23,7 @@ function meuEscopo() {
         resultado.innerHTML += `<p>Dados inseridos: ${nome.value} ${sobrenome.value} Nascimento: ${nasc.value}</p>`;
     }
 
-    form.addEventListener('submit', recebeEventoForm);
+    form.addEventListener('enviar', recebeEventoForm);
 }
 
 meuEscopo();
