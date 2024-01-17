@@ -10,6 +10,11 @@ form.addEventListener('submit', function(e) {
     
     const peso = Number(inputPeso.value);
     const altura = Number(inputAltura.value);
+
+    if(!peso) {
+        setResultado('Peso Inválido!', false);
+        return;
+    }
 });
 
 function criaP () {
