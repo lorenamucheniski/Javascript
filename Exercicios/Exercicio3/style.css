@@ -71,3 +71,12 @@ input {
     width: 90%;
 }
 
+.paragrafo-resultado {
+    background-color: rgba(128, 255, 0, 0.897);
+    padding: .5em;
+}
+
+.bad {
+    background-color: rgb(243, 55, 30);
+    padding: .5em;
+}
