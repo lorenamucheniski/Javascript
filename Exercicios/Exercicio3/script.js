@@ -5,6 +5,7 @@ const form = document.querySelector('.form');
 //adicionando um evento de submit e criando uma função
 form.addEventListener('submit', function(e) {
     e.preventDefault();
+    setResultado('Olá mundo')
 });
 
 function setResultado (msg) {

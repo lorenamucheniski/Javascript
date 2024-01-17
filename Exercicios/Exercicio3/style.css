@@ -59,9 +59,19 @@ input {
 
 .botao {
     margin-top: 1em;
-    background-color: darkcyan;
+    background-color: rgb(43, 100, 100);
+    color: white;
 }
 
 .botao:hover {
     background-color: cadetblue;
+}
+
+.resultado {
+    width: 90%;
+}
+
+.paragrafo-resultado {
+    background-color: rgb(45, 199, 109);
+    padding: .6em;
 }
