@@ -5,16 +5,19 @@ const form = document.querySelector('.form');
 //adicionando um evento de submit e criando uma função e= evento
 form.addEventListener('submit', function(e) {
     e.preventDefault();                         
-    setResultado('Olá mundo')                        //retornando o valor de resultado e exibindo no html
+    const inputAltura = e.target.querySelector('#altura');          //pegando altura inserida pelo usuario
+    const inputPeso = e.target.querySelector('#peso');              //pegando peso inserido pelo usuario
+    console.log(inputPeso)
+    console.log(inputAltura)
 });
+
+function criaP () {
+    //criando uma const e inserindo um paragrafo na div resultado
+    const p = document.createElement('p');           //criando elemento p
+    return p;
+}
 
 function setResultado (msg) {
     const resultado = document.querySelector('.resultado');
     resultado.innerHTML = '';
-
-    //criando uma const e inserindo um paragrafo na div resultado
-    const p = document.createElement('p');           //criando elemento p
-    p.classList.add('paragrafo-resultado');          //adicioandno uma classe no meu elemento p
-    p.innerHTML = 'Alguma coisa';                    //exibir no meu documento html
-    resultado.appendChild(p);                        //tornando a const p filha da const resultado
 }
