@@ -12,10 +12,28 @@ form.addEventListener('submit', function(e) {
     const altura = Number(inputAltura.value);
 
     if(!peso) {
-        setResultado('Peso Inválido!', false);
+        setResultado('Peso inválido!', false);
         return;
     }
+
+    if (!altura) {
+        setResultado('Altura inválida', false);
+        return;
+    }
+
+    const imc = getImc(peso, altura);
+
+    console.log(imc)
 });
+
+function getImc (peso, altura) {
+    const imc = peso / altura ** 2 ;
+    return imc.toFixed(2);
+}
+
+function getNivelImc (imc) {
+    const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3']
+}
 
 function criaP () {
     //criando uma const e inserindo um paragrafo na div resultado
@@ -23,7 +41,11 @@ function criaP () {
     return p;
 }
 
-function setResultado (msg) {
+function setResultado (msg, isValid) {
     const resultado = document.querySelector('.resultado');
     resultado.innerHTML = '';
+
+    const p = criaP();
+    p.innerHTML= msg;
+    resultado.appendChild(p);
 }
