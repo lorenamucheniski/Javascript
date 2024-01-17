@@ -5,10 +5,11 @@ const form = document.querySelector('.form');
 //adicionando um evento de submit e criando uma função e= evento
 form.addEventListener('submit', function(e) {
     e.preventDefault();                         
-    const inputAltura = e.target.querySelector('#altura');          //pegando altura inserida pelo usuario
     const inputPeso = e.target.querySelector('#peso');              //pegando peso inserido pelo usuario
-    console.log(inputPeso)
-    console.log(inputAltura)
+    const inputAltura = e.target.querySelector('#altura');          //pegando altura inserida pelo usuario
+    
+    const peso = Number(inputPeso.value);
+    const altura = Number(inputAltura.value);
 });
 
 function criaP () {
