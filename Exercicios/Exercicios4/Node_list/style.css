@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(28, 28, 151);
+}
+
+.container {
+    margin: 10em auto 0;
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px 10px 5px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
