@@ -14,4 +14,6 @@ try {
     console.log(soma('2', 3))
 } catch(err) {
     console.log('x ou y não é um número.')
+} finally {
+    console.log('Sempre sou exibido')
 }
