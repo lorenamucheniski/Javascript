@@ -6,12 +6,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
+    font-size: 10px;
 }
 
 body {
     background: linear-gradient(30deg, rgba(204,139,185) 0%, rgba(213,21,170) 35%, rgba(65,22,60) 100%);
     height: 100vh;
+    margin: 1em;
 }
 
 header {
@@ -30,7 +31,8 @@ header {
 }
 
 section {
-    width: 15em;
+    min-width: 15em;
+    max-width: 25em;
     padding: 5px;
     font-size: 2rem;
     display: flex;
@@ -40,9 +42,14 @@ section {
 }
 
 input {
-    width: 20em;
+    width: 100%;
+    height: 3em;
+    font-size: .7em;
     border: 2px solid transparent;
     border: 1px solid rgba(0, 0, 0, 0.692);
+    border-radius: 1em 0 ;
+    transform: skewX(-6deg);
+
 }
  input:focus {
     font-weight: bold;
@@ -53,17 +60,54 @@ button, input {
     padding: .5em;
 }
 
+.enviar {
+    width: 6em;
+    font-size: .7em;
+    border-radius: 1em 0 ;
+    transform: skewX(-6deg);
+}
+
+button:hover {
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.664);
+    
+}
+
 main {
     background-color: aliceblue;
-    width: 29rem;
-    height: 30rem;
+    min-width: 15rem;
+    max-width: 50em ;
+    min-height: 20em;
     margin: 0 auto 0;
     border-radius: 1em;
+    padding-bottom: .3em;
 }
 
 .tarefas {
-    font-size: 2rem;
-    padding: .5em 1.5em 0;
+    padding: .5em 0 0 0;
+    width: 100%;
+}
+
+.tarefas li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+    background-color: rgba(221, 105, 128, 0.432);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    margin: 1em 1em;
+    padding: .5em;
+    border-radius: .5em;
+    box-shadow: 2px 2px rgba(31, 5, 9, 0.726);
+}
+
+.apagar:hover {
+    border: 1px solid rgb(228, 6, 161);
+}
+
+@media screen and (min-width: 550px) {
+    header {
+        justify-content: center;
+    }
+    
 }
 
 
