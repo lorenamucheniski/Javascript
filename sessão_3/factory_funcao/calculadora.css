@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    --verde-musgo: #133006;
+}
+
+body {
+    background-color: var(--verde-musgo);
+    padding: 1em;
+    height: 100vh;
+}
+
+.container {
+    max-width: 46.875em;
+    margin: 10% auto;
+    outline: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Calculadora {
+    font-size: 2em;
+}
