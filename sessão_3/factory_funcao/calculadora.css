@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    --verde-musgo: #133006;
+    --cor1: #060607;
+    --cor2: #1f2a45;
 }
 
 body {
-    background-color: var(--verde-musgo);
+    background-color: var(--cor1);
     padding: 1em;
     height: 100vh;
 }
@@ -13,12 +14,29 @@ body {
 .container {
     max-width: 46.875em;
     margin: 10% auto;
-    outline: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.container h1 {
+    color: white;
+    padding-top: 1em;
+}
+
 .Calculadora {
     font-size: 2em;
+    outline: 1px solid white;
+    border-radius: .2em;
+    padding: 0 .2em .2em;
+    background-color: var(--cor2);
+}
+
+.display {
+    padding: .5em;
+}
+
+.btn {
+    width: 100%;
+    padding: .8em 1em;
 }
